@@ -20,6 +20,9 @@ import { AppComponent } from './app.component';
     NgxsModule. forRoot ([TodoState], { 
       developmentMode : !environment.production 
     }),
+    NgxsLoggerPluginModule.forRoot({
+      disabled: environment.production
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
