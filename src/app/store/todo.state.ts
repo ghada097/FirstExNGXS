@@ -11,6 +11,7 @@ export interface TodoStateModel {
     todoList: [],
   }
 })
+
 export class TodoState {
 
   @Selector()
